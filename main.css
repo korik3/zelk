@@ -1,51 +1,88 @@
 /**
- * @name ok
- * @author Gibbu#1211
- * @version 2.0.0
- * @description Display your picture of choice with adjustable blur and brightness.
- * @source https://github.com/DiscordStyles/FrostedGlass
- * @invite ZHthyCw
- * @donate https://paypal.me/IanRGibson
- * @website https://gibbu.me
- * @authorId 174868361040232448
- * @BDEditor Frosted Glass
+ * @name 23
+ * @author ClearVision Team
+ * @version 6.3.0
+ * @description Highly customizable and beautiful theme for BetterDiscord.
+ * @source https://github.com/ClearVision/ClearVision-v6
+ * @website https://clearvision.github.io
+ * @invite 7pNUC9C
+ * @BDEditor Clear Vision
 */
 
-@import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
-@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+@import url('https://clearvision.github.io/ClearVision-v6/main.css');
 
 :root {
-  --background-image: url('https://media.tenor.com/ndWcgemT5ZcAAAAC/vinland-saga-thorfinn.gif');
-  --background-image-blur: 12px;
-  --background-image-size: cover;
-  --background-image-position: top center;
-  --popout-image: var(--background-image);
-  --popout-image-blur: 5px;
-  --popout-image-size: cover;
-  --popout-image-position: center;
-  --overlay-image: url('https://thumbs.gfycat.com/GrayCostlyElectriceel-size_restricted.gif');
-  --overlay-image-blur: 5px;
-  --overlay-image-size: cover;
-  --overlay-image-position: center;
-  --home-button-image: url('https://i.imgur.com/XRKbm58.jpg');
-  --home-button-size: 200%;
-  --home-button-position: center;
-  --serverlist-brightness: 0.38;
-  --left-brightness: 0.46;
-  --middle-brightness: 0.5;
-  --right-brightness: 0.24;
-  --overlay-brightness: 0.78;
-  --gradient-primary: 103,58,183;
-  --gradient-secondary: 63,81,181;
-  --link-colour: #00b0f4;
-  --scrollbar-colour: rgba(255,255,255,0.05);
-  --gradient-direction: 320deg;
-  --tint-colour: 255,51,159;
-  --tint-brightness: 0;
-  --font: gg sans;
-  --window-padding: 20px;
-  --window-roundness: 10px;
-  --update-notice-1: none;
+  --main-color: #081421;
+  --hover-color: #010F20;
+  --success-color: #AABDB5;
+  --danger-color: #971111;
+  --url-color: var(--main-color);
+  --background-image: url('https://wallpaper.dog/large/20519594.jpg');
+  --background-shading: 12%;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 121%;
+  --background-contrast: 100%;
+  --background-saturation: 100%;
+  --background-grayscale: 0%;
+  --background-invert: 0%;
+  --background-blur: 0px;
+  --background-overlay: rgba(0,0,0,0.6);
+  --user-popout-image: url('https://wallpaper.dog/large/20519594.jpg');
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-repeat: no-repeat;
+  --user-popout-attachment: fixed;
+  --user-popout-brightness: 100%;
+  --user-popout-contrast: 100%;
+  --user-popout-saturation: 100%;
+  --user-popout-grayscale: 0%;
+  --user-popout-invert: 0%;
+  --user-popout-blur: 3px;
+  --user-modal-image: url('https://e0.pxfuel.com/wallpapers/602/445/desktop-wallpaper-baki-hanma-baki-manga.jpg');
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-repeat: no-repeat;
+  --user-modal-attachment: fixed;
+  --user-modal-brightness: 27%;
+  --user-modal-contrast: 100%;
+  --user-modal-saturation: 100%;
+  --user-modal-grayscale: 0%;
+  --user-modal-invert: 0%;
+  --user-modal-blur: 0px;
+  --home-icon: url('data:image/jpeg;base64,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');
+  --home-position: center;
+  --home-size: 70px;
+  --channel-unread: var(--main-color);
+  --channel-color: rgba(255,255,255,0.3);
+  --muted-color: rgba(255,255,255,0.1);
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+  --main-font: gg sans;
+  --code-font: Consolas;
+  --channels-width: 220px;
+  --members-width: 240px;
+  --backdrop-overlay: rgba(0,0,0,0.8);
+  --backdrop-image: var(--background-image);
+  --backdrop-position: var(--background-position);
+  --backdrop-size: var(--background-size);
+  --backdrop-repeat: var(--background-repeat);
+  --backdrop-attachment: var(--background-attachment);
+  --backdrop-brightness: var(--background-brightness);
+  --backdrop-contrast: var(--background-contrast);
+  --backdrop-saturation: var(--background-saturation);
+  --backdrop-invert: var(--background-invert);
+  --backdrop-grayscale: var(--background-grayscale);
+  --backdrop-sepia: var(--background-sepia);
+  --backdrop-blur: var(--background-blur);
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
 }
 
 /* Any custom CSS below here */
