@@ -1,1 +1,53 @@
-..
+/**
+ * @name ok
+ * @author Gibbu#1211
+ * @version 2.0.0
+ * @description Display your picture of choice with adjustable blur and brightness.
+ * @source https://github.com/DiscordStyles/FrostedGlass
+ * @invite ZHthyCw
+ * @donate https://paypal.me/IanRGibson
+ * @website https://gibbu.me
+ * @authorId 174868361040232448
+ * @BDEditor Frosted Glass
+*/
+
+@import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
+@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+
+:root {
+  --background-image: url('https://media.tenor.com/ndWcgemT5ZcAAAAC/vinland-saga-thorfinn.gif');
+  --background-image-blur: 12px;
+  --background-image-size: cover;
+  --background-image-position: top center;
+  --popout-image: var(--background-image);
+  --popout-image-blur: 5px;
+  --popout-image-size: cover;
+  --popout-image-position: center;
+  --overlay-image: url('https://thumbs.gfycat.com/GrayCostlyElectriceel-size_restricted.gif');
+  --overlay-image-blur: 5px;
+  --overlay-image-size: cover;
+  --overlay-image-position: center;
+  --home-button-image: url('https://i.imgur.com/XRKbm58.jpg');
+  --home-button-size: 200%;
+  --home-button-position: center;
+  --serverlist-brightness: 0.38;
+  --left-brightness: 0.46;
+  --middle-brightness: 0.5;
+  --right-brightness: 0.24;
+  --overlay-brightness: 0.78;
+  --gradient-primary: 103,58,183;
+  --gradient-secondary: 63,81,181;
+  --link-colour: #00b0f4;
+  --scrollbar-colour: rgba(255,255,255,0.05);
+  --gradient-direction: 320deg;
+  --tint-colour: 255,51,159;
+  --tint-brightness: 0;
+  --font: gg sans;
+  --window-padding: 20px;
+  --window-roundness: 10px;
+  --update-notice-1: none;
+}
+
+/* Any custom CSS below here */
+
+
